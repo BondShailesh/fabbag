@@ -18,17 +18,27 @@ export function AlertA() {
     } = useDisclosure({ defaultIsOpen: true })
   
     return isVisible ? (
-      <Alert status='success'>
-        <AlertIcon />
-        <Box textAlign="center">
-          {/* <AlertTitle>Success!</AlertTitle> */}
+      <Alert status='success'
+      flexDirection='column'
+      alignItems='center'
+      justifyContent='center'
+      textAlign='center'
+      p="7px"
+      color="white"
+      bg="black"
+      >
+        <Box display="flex" justifyContent="center">
+
           <AlertDescription 
-        alignSelf='center'
-        textAlign='center'
+          p="0"
+          m="0"
           >
            AVAILABLE NOW-THE BEAUTI BUNDLE JULY FAB BAG!
           </AlertDescription>
+
+
         </Box>
+        
         <CloseButton 
           alignSelf='flex-end'
           position='absolute'
