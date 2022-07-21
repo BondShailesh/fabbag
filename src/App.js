@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './component/Navbar';
 import { AlertA } from './component/Alert';
-import Caurosel from './pages/SlideShow';
+import Navbar from './component/Navbar';
+import AllRoutes from './pages/AllRoutes';
 
 function App() {
   return (
     <div className="App">
-      <AlertA/>
-      <Navbar/>
-      <Caurosel/>
+      <AlertA />
+      <Navbar />
+      <AllRoutes />
     </div>
   );
 }
