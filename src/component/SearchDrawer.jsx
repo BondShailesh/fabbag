@@ -41,18 +41,17 @@ useEffect(()=>{
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader 
+            color="grey"
+            fontSize="13px"
+            mt="110px"
+            >
+              WHAT ARE YOU LOOKING FOR?</DrawerHeader>
   
-            <DrawerBody>
-              <Input placeholder='Search product' />
+            <DrawerBody mb="120px">
+              <Input border="1px solid white" p="40px" fontSize="34px" placeholder='Search product' />
             </DrawerBody>
-  
-            <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme='blue'>Save</Button>
-            </DrawerFooter>
+
           </DrawerContent>
         </Drawer>
       </>

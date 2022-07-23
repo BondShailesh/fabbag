@@ -1,7 +1,7 @@
 import { Box, Heading, Stack, Text, Input, Button } from '@chakra-ui/react'
 import React from 'react'
 import { BsGoogle, BsFacebook } from "react-icons/bs";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 function SignIn() {
   return (
     <Stack
@@ -13,7 +13,7 @@ function SignIn() {
       mb="50px"
     >
 
-      <Heading fontWeight="medium" textAlign="center" m="35px">Sign In</Heading>
+      <Heading fontWeight="medium" textAlign="center" m="35px">SignIn</Heading>
 
       <Button
         display="flex"
@@ -46,19 +46,19 @@ function SignIn() {
         <Text > <Link to="/"> Forgot your Passowrd?</Link></Text>
       </Box>
 
-      <Button  bg="rgb(230,187,101)">Sign in</Button>
+      <Button bg="rgb(230,187,101)">Sign in</Button>
 
-      <Box 
-      display="flex" 
-      justifyContent="space-evenly"
-      p="34px 0">
-        <hr style={{width:"30%"}} />
-        <Text mt="-20px"fontSize="20px">or</Text>
-        <hr style={{width:"30%"}} />
+      <Box
+        display="flex"
+        justifyContent="space-evenly"
+        p="34px 0 23px 0">
+        <hr style={{ width: "30%" }} />
+        <Text mt="-20px" fontSize="20px">or</Text>
+        <hr style={{ width: "30%" }} />
       </Box>
 
-      <Button 
-      bg="rgb(230,187,101)">Create an Account</Button>
+      <Button
+        bg="rgb(230,187,101)">Create an Account</Button>
     </Stack>
   )
 }
