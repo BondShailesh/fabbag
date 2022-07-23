@@ -8,19 +8,24 @@ import { useContext } from 'react';
 import { searchContext } from '../context/IconContext';
 import { SearchDrawer } from './SearchDrawer';
 import Profile from './Profile';
+import { Cart } from './Cart';
 
 function Navbar() {
-  const {Changestate} = useContext(searchContext)
+  const {Changestate,handleCart} = useContext(searchContext)
 
   const handleSearch = () => {
     Changestate(true);
   }
-
+ 
+  const handleCartchange = ()=>{
+      handleCart(true)
+  }
   return (
     <div
       className={styles.navbar}
     >
        <SearchDrawer/>
+       <Cart/>
       <Flex
         boxShadow='2xl'
         p='9'
@@ -60,7 +65,7 @@ function Navbar() {
           <Box m="0 -12px 0 10px" ><Profile><CgProfile /></Profile>
         
             </Box>
-          <Box m="0 13px" ><BsCart2 /></Box>
+          <Box m="0 13px" ><BsCart2 onClick={handleCartchange}/></Box>
         </Flex>
       </Flex>
     </div>

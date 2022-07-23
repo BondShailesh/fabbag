@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { Cart } from '../component/Cart'
 import Checkout from './Checkout'
 import Fabbag from './Fabbag'
 import SignIn from './SignIn'
@@ -17,6 +18,7 @@ function AllRoutes() {
             <Route path='/signin' element={<SignIn/>}></Route>
             <Route path='/signup' element={<SignUp/>}></Route>
             <Route path='/checkout' element={<Checkout/>}></Route>
+            {/* <Route path='/cart' element={<Cart/>}></Route> */}
         </Routes>
     </div>
   )
