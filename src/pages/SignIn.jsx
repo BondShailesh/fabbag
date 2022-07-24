@@ -1,8 +1,18 @@
 import { Box, Heading, Stack, Text, Input, Button } from '@chakra-ui/react'
 import React from 'react'
+import { useContext } from 'react';
 import { BsGoogle, BsFacebook } from "react-icons/bs";
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
+import { searchContext } from '../context/IconContext';
+
 function SignIn() {
+  const {login,setLogin} = useContext(searchContext);
+   const handleLogin = ()=>{
+    <Navigate to="/" />
+    setLogin(true);
+    console.log(login);
+     
+   }
   return (
     <Stack
       width="27%"
@@ -46,7 +56,7 @@ function SignIn() {
         <Text > <Link to="/"> Forgot your Passowrd?</Link></Text>
       </Box>
 
-      <Button bg="rgb(230,187,101)">Sign in</Button>
+      <Button onClick={handleLogin} bg="rgb(230,187,101)">Sign in</Button>
 
       <Box
         display="flex"

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Img, Text, Box, Stack, Flex, Grid, GridItem } from '@chakra-ui/react'
+import { Img, Text, Grid, GridItem } from '@chakra-ui/react';
 
 function BeautiBundle() {
     return (

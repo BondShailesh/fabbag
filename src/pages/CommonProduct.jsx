@@ -19,7 +19,7 @@ import {
 import { useContext } from "react";
 import { CartContext } from "../context/FabContext";
 
-function Subscribe() {
+function CommonProduct() {
     const [des, setDes] = useState(true);
     const [plan, setPlan] = useState(false);
     const [ret, setRet] = useState(false);
@@ -27,8 +27,7 @@ function Subscribe() {
     const [write, setWrite] = useState(false)
     const [data, setData] = useState({});
     const [item, setItem] = useState(1);
-    const { cartdispatch } = useContext(CartContext);
-
+    const { cartstate, cartdispatch } = useContext(CartContext);
     const handleDis = () => {
         setDes(!des);
         setPlan(false)
@@ -137,4 +136,4 @@ function Subscribe() {
     )
 }
 
-export default Subscribe
+export default CommonProduct

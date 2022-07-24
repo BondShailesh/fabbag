@@ -6,17 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter } from "react-router-dom";
 import { SearchProvide } from './context/IconContext';
+import { CartProvider } from './context/FabContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SearchProvide>
-      <BrowserRouter>
-        <ChakraProvider>
-          <App />
-        </ChakraProvider>
-      </BrowserRouter>
-    </SearchProvide>
+    <CartProvider>
+      <SearchProvide>
+        <BrowserRouter>
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
+        </BrowserRouter>
+      </SearchProvide>
+    </CartProvider>
   </React.StrictMode>
 );
 
