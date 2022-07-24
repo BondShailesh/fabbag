@@ -11,21 +11,21 @@ import Profile from './Profile';
 import { Cart } from './Cart';
 
 function Navbar() {
-  const {Changestate,handleCart} = useContext(searchContext)
+  const { Changestate, handleCart } = useContext(searchContext)
 
   const handleSearch = () => {
     Changestate(true);
   }
- 
-  const handleCartchange = ()=>{
-      handleCart(true)
+
+  const handleCartchange = () => {
+    handleCart(true)
   }
   return (
     <div
       className={styles.navbar}
     >
-       <SearchDrawer/>
-       <Cart/>
+      <SearchDrawer />
+      <Cart />
       <Flex
         boxShadow='2xl'
         p='9'
@@ -57,10 +57,10 @@ function Navbar() {
         </Flex>
 
         <Flex justifyContent='space-between' color="rgb(230,187,101)">
-          <Box m="0 13px" _hover={{cursor:"pointer"}}><BsSearch  onClick={handleSearch} /></Box>
-          <Box _hover={{cursor:"pointer"}} m="0 13px" ><Link to="/wishlist"><BsHeart/></Link></Box>
-          <Box _hover={{cursor:"pointer"}} m="0 -12px 0 10px" ><Profile><CgProfile /></Profile></Box>
-          <Box _hover={{cursor:"pointer"}} m="0 13px" ><BsCart2 onClick={handleCartchange}/></Box>
+          <Box m="0 13px" _hover={{ cursor: "pointer" }}><BsSearch onClick={handleSearch} /></Box>
+          <Box _hover={{ cursor: "pointer" }} m="0 13px" ><Link to="/wishlist"><BsHeart /></Link></Box>
+          <Box _hover={{ cursor: "pointer" }} m="0 -12px 0 10px" ><Profile><CgProfile /></Profile></Box>
+          <Box _hover={{ cursor: "pointer" }} m="0 13px" ><BsCart2 onClick={handleCartchange} /></Box>
         </Flex>
       </Flex>
     </div>
