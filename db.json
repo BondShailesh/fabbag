@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858",
+      "title": "The Beauty Bundle July Fab Bag",
+      "description": "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...",
+      "price": 599,
+      "Totalitem": 1
+    }
+  ],
+  "carts": [
+    {
+      "title": "The Beauty Bundle July Fab Bag",
+      "image": "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858",
+      "description": "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...",
+      "price": 599,
+      "totalItem": 1,
+      "id": 1
+    },
+    {
+      "title": "The Beauty Bundle July Fab Bag",
+      "image": "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858",
+      "description": "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...",
+      "price": 599,
+      "totalItem": 3,
+      "id": 2
+    },
+    {
+      "title": "The Beauty Bundle July Fab Bag",
+      "image": "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858",
+      "description": "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...",
+      "price": 599,
+      "totalItem": 3,
+      "id": 3
+    },
+    {
+      "title": "The Beauty Bundle July Fab Bag",
+      "image": "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858",
+      "description": "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...",
+      "price": 599,
+      "totalItem": 1,
+      "id": 4
+    },
+    {
+      "title": "The Beauty Bundle July Fab Bag",
+      "image": "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858",
+      "description": "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...",
+      "price": 599,
+      "totalItem": 2,
+      "id": 5
+    }
+  ]
+}

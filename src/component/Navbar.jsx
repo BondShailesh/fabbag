@@ -57,15 +57,10 @@ function Navbar() {
         </Flex>
 
         <Flex justifyContent='space-between' color="rgb(230,187,101)">
-          <Box m="0 13px" >
-            <BsSearch onClick={handleSearch} />
-          </Box>
-          <Box m="0 13px" ><Link to="/wishlist"><BsHeart/></Link></Box>
-
-          <Box m="0 -12px 0 10px" ><Profile><CgProfile /></Profile>
-        
-            </Box>
-          <Box m="0 13px" ><BsCart2 onClick={handleCartchange}/></Box>
+          <Box m="0 13px" _hover={{cursor:"pointer"}}><BsSearch  onClick={handleSearch} /></Box>
+          <Box _hover={{cursor:"pointer"}} m="0 13px" ><Link to="/wishlist"><BsHeart/></Link></Box>
+          <Box _hover={{cursor:"pointer"}} m="0 -12px 0 10px" ><Profile><CgProfile /></Profile></Box>
+          <Box _hover={{cursor:"pointer"}} m="0 13px" ><BsCart2 onClick={handleCartchange}/></Box>
         </Flex>
       </Flex>
     </div>

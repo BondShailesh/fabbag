@@ -35,7 +35,7 @@ function Checkout() {
         <Box display="flex" justifyContent="space-between">
           <Text p="12px 0" fontSize="21px">Contact information</Text>
           <Text>
-            Already have an account? <Link to="/login">Log in</Link> </Text>
+            Already have an account? <Link to="/signin">Log in</Link> </Text>
         </Box>
         <Input p="23px" placeholder='Email' />
         <Checkbox p="15px">	Email me with news and offers</Checkbox>

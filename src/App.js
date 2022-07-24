@@ -1,14 +1,16 @@
 import './App.css';
 import { AlertA } from './component/Alert';
+import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import AllRoutes from './pages/AllRoutes';
-
+import { Link } from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <AlertA />
+      <Link to="/subscribe"><AlertA /> </Link>
       <Navbar />
       <AllRoutes />
+      <Footer />
     </div>
   );
 }
