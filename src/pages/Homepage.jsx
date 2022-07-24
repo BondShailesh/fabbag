@@ -3,6 +3,7 @@ import React from 'react'
 import BeautiBundle from './BeautiBundle'
 import { Menu } from './HorizontalScroll'
 import PriviosBag from './PriviousBags'
+import Testimoni from './Testimoni'
 
 function Homepage() {
     return (
@@ -39,7 +40,7 @@ function Homepage() {
             >
                 <VStack
                     border="1px solid grey"
-                    w="350px"
+                    w="310px"
                     ml="400px"
                 >
                     <Box p="16px">
@@ -95,6 +96,7 @@ function Homepage() {
                     marginBottom: "60px"
                 }} />
             <PriviosBag />
+            <Testimoni />
         </Stack>
     )
 }
